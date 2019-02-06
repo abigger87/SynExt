@@ -1,0 +1,3 @@
+# SynExt
+
+Synonyms with ease.
