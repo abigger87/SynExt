@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "SynExt",
+  "description": "Display synonyms without the need to search individually.",
+  "version": "1.0.0",
+  "author": "Andreas Bigger",
+  "browser_action": {
+    "default_icon": "logo/logo.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "logo/favicon.png",
+    "48": "logo/logo.png",
+    "128": "logo/logo.png"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "declarativeContent",
+    "activeTab",
+    "storage",
+    "tabs"
+  ]
+}
